@@ -1,0 +1,30 @@
+{
+  "name": "@pallad/logger",
+  "version": "1.0.0",
+  "description": "Preconfigured logger with regexp for fluentd",
+  "main": "index.js",
+  "scripts": {
+    "test": "pallad-scripts test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallad-ts/logger.git"
+  },
+  "keywords": [
+    "logger",
+    "pallad",
+    "winston",
+    "fluentd",
+    "fluent",
+    "bit"
+  ],
+  "author": "Łukasz Kużyński <lukasz.kuzynski@gmail.com> (http://wookieb.pl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pallad-ts/logger/issues"
+  },
+  "homepage": "https://github.com/pallad-ts/logger#readme",
+  "devDependencies": {
+    "@pallad/scripts": "^1.1.0"
+  }
+}
