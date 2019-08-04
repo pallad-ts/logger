@@ -3,6 +3,7 @@
     "compilerOptions": {
         "noEmit": true,
         "baseUrl": "../src",
+        "noImplicitAny": false,
         "paths": {
             "@src/*": [
                 "*"
