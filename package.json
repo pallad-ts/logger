@@ -1,6 +1,6 @@
 {
     "name": "@pallad/logger",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Preconfigured logger with regexp for fluentd",
     "main": "index.js",
     "scripts": {
