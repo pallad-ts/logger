@@ -4,7 +4,8 @@ describe('Component', () => {
     describe('parsing', () => {
         it.each<[string, Component]>([
             ['a.b.c', new Component(['a', 'b', 'c'])],
-            ['a', new Component(['a'])]
+            ['a', new Component(['a'])],
+            ['command-bus', new Component(['command-bus'])]
         ])('case: %s', (input, expected) => {
             expect(Component.parse(input))
                 .toEqual(expected);

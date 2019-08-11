@@ -3,7 +3,7 @@ import minimatch = require('minimatch');
 
 const isValidPart = is.all(
     is.notBlank,
-    is.match(/^[a-z0-9_\-]$/i)
+    is.match(/^[a-z0-9_\-]+$/i)
 );
 
 function assertPart(part: string) {

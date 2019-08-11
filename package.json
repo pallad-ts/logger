@@ -1,13 +1,14 @@
 {
     "name": "@pallad/logger",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "Preconfigured logger with regexp for fluentd",
-    "main": "index.js",
+    "main": "compiled/index.js",
+    "types": "compiled/index.d.ts",
     "scripts": {
         "test": "pallad-scripts test",
         "compile": "pallad-scripts compile",
         "lint": "pallad-scripts lint",
-        "prepack": "npm run lint"
+        "prepack": "npm run lint && npm run compile"
     },
     "repository": {
         "type": "git",
@@ -21,6 +22,7 @@
         "fluent",
         "bit"
     ],
+    "files": ["compiled"],
     "author": "Łukasz Kużyński <lukasz.kuzynski@gmail.com> (http://wookieb.pl)",
     "license": "MIT",
     "bugs": {
