@@ -1,4 +1,4 @@
-import {createLogger, log} from "winston";
+import {createLogger, log, transports} from "winston";
 import {format} from "./index";
 
 function getFormat() {
@@ -19,5 +19,8 @@ function getFormat() {
 }
 
 export const logger = createLogger({
-    format: getFormat() === 'json' ? format.json : format.humanReadable
+    format: getFormat() === 'json' ? format.json : format.humanReadable,
+    transports: [
+        new transports.Console()
+    ]
 });
