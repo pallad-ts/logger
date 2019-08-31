@@ -18,7 +18,9 @@ function getFormat() {
     return 'human';
 }
 
+
 export const logger = createLogger({
+    level: process.env.PALLAD_LOGGER_LEVEL || 'info',
     format: getFormat() === 'json' ? format.json : format.humanReadable,
     transports: [
         new transports.Console()
