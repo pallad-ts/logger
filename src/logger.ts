@@ -1,4 +1,4 @@
-import {createLogger, log, transports} from "winston";
+import {createLogger, transports} from "winston";
 import {format} from "./index";
 
 function getFormat() {
@@ -26,3 +26,5 @@ export const logger = createLogger({
         new transports.Console()
     ]
 });
+
+export const globalLogger = logger;

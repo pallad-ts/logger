@@ -4,3 +4,4 @@ export const format = _format;
 export * from './setupProcess';
 export * from './createLoggerForComponent';
 export * from './logger';
+export * from './types';

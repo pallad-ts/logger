@@ -30,25 +30,4 @@ describe('Component', () => {
         expect(Component.parse('a.b').join(Component.parse('c.d')))
             .toHaveProperty('name', 'a.b.c.d');
     });
-
-    describe('matching', () => {
-        const component = Component.parse('a.b.c.d.e');
-        it.each([
-            ['a.*'],
-            ['a.*.d.*'],
-            ['a.b.c.*'],
-            ['a.{b,d}.*']
-        ])('valid: %s',input => {
-            expect(component.matches(input))
-                .toBeTruthy();
-        });
-
-        it.each([
-            ['a.*.d'],
-            ['b.*']
-        ])('invalid: %s',input => {
-            expect(component.matches(input))
-                .toBeFalsy();
-        })
-    })
 });

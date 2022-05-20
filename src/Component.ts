@@ -1,5 +1,4 @@
 import * as is from 'predicates';
-import minimatch = require('minimatch');
 
 const isValidPart = is.all(
     is.notBlank,
@@ -28,10 +27,6 @@ export class Component {
 
     toString() {
         return this.parts.join('.');
-    }
-
-    matches(pattern: string) {
-        return minimatch(this.name, pattern, {nocase: true});
     }
 
     static parse(input: string) {

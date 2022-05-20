@@ -1,5 +1,5 @@
 import {format as f} from "winston";
-import extractStack = require('extract-stack');
+import extractStack = require("extract-stack");
 
 export const formatError = f(info => {
     if (info.metadata) {
